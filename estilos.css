@@ -1,0 +1,670 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Source Serif Pro', serif;
+    background-color: #fff9f1;
+}
+
+header{
+    border-top: 10px #ff3281 solid;
+}
+
+footer{
+    border-bottom: 10px #ff3281 solid;
+}
+
+.ancho{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.negritas{
+    font-weight: bold;
+}
+
+.cabecera{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cabecera1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 800px;
+    max-width: 1100px;
+}
+
+.logo{
+    width: 200px;
+    margin: 0;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.redesSociales{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.redesSociales i{
+    border: 4px black solid;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.redesSociales i:hover{
+    border: 4px #ff3281 solid;
+    background-color: #ff3281;
+}
+
+.cabecera2{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+.cabecera2 nav{
+    margin: 0px;
+    padding: 0px;
+    border: 1px black solid;
+}
+
+.cabecera2 nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 200px;
+}
+
+.cabecera2 nav ul li{
+    display: inline-block;
+}
+
+.cabecera2 nav ul li a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+.cabecera2 nav ul li a:hover{
+    color: orangered;
+}
+
+.barras{
+    text-decoration: none;
+    color: #fff;
+    display: none;
+    background-color: #ff3281;
+    border: 1px #ff3281 solid;
+    padding: 0;
+}
+
+/*******CSS del fondo************/
+.fondo{
+    background-image: url(imagenes/slide1.jpg);
+    background-repeat: no-repeat;
+    height: 500px;
+    margin: auto;
+    background-size: 100%;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: white;
+    padding-top: 205px;
+}
+
+.banner h2{
+    font-size: 30px;
+}
+
+.banner p{
+    font-weight: bold;
+    text-align: center;
+    padding-left: 350px;
+    padding-right: 350px;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.botones a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+.btn_rosa{
+    border: 1px #ff3281 solid;
+    background-color: #ff3281;
+    border-radius: 5px;
+    padding: 15px 20px;
+}
+
+.btn_rosa:hover{
+    border: 1px #ff3281 solid;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 15px 20px;
+}
+
+/*******CSS de las velas***********/
+.velas{
+    background-color: #fff;
+}
+
+.velas1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+}
+
+.velas1 article{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.velas1 article p{
+    line-height: 30px;
+}
+
+.imagen{
+    margin: 0;
+    max-width: 500px;
+    border: 10px #7cd474 solid;
+    opacity: 45%;
+}
+
+.imagen img{
+    width: 100%;
+}
+
+/*****CCS de los puestos de trabajo*****/
+.trabajos{
+    padding-top: 15px;
+}
+
+.trabajos h3{
+    font-size: 20px;
+    text-align: center;
+}
+
+.puestos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.imagen2{
+    margin: 0;
+    max-width: 800px;
+    height: 400px;  
+}
+
+.imagen2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    filter: sepia(90%);
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 700px;
+    text-align: justify;
+}
+
+/*********CSS de los masajes******/
+.tratamientos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 25px;
+}
+
+.masajes{
+    max-width: 320px;
+    height: 500px;
+    background-color: #ffe8a4;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 15px;
+}
+
+.masajes h3{
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.masaje1{
+    max-width: 170px;
+}
+
+.masaje1 img{
+    width: 100%;
+    border-radius: 50%;
+    border: 10px white solid;
+}
+
+.btn_rosa2{
+    border: 1px #ff3281 solid;
+    background-color: #ff3281;
+    border-radius: 5px;
+    padding: 15px 20px;
+}
+
+.btn_rosa2{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+.btn_rosa2:hover{
+    border: 1px #ff3281 solid;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 15px 20px; 
+    color: black;
+}
+
+/************CSS de las imagenes********/
+.titulo{
+    margin: 30px 0px;
+    text-align: center;
+}
+
+.banner2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+}
+
+.banner3{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.img1, .img2{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    width: 100%;
+}
+
+.banner3 figure{
+    margin: 0;
+}
+
+.img1 figure{
+    width: 50%;
+    max-height: 270px;
+    margin: 0;
+}
+
+.img2 figure{
+    width: 50%;
+    margin: 0;
+}
+
+.img1 figure img, .img2 figure img{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+.imagen_grande{
+    max-width: 50%;
+    margin: 0;
+}
+
+.imagen_grande img{
+    width: 100%;
+    height: 100%;
+}
+
+/**********CSS del pie de pagina******/
+.pie{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pie figure{
+    margin: 0;
+    max-width: 170px;
+}
+
+.pie figure img{
+    width: 100%;
+}
+
+.pie a{
+    text-decoration: none;
+    color: #ff3281;
+}
+
+.pie a:hover{
+    color: orangered;
+}
+
+.flecha{
+    position: fixed; /*Se queda fijo*/
+    z-index: 3;
+    bottom: 20px;
+    right: 20px;
+    font-size: 50px;
+    padding: 10px 13px;
+    border-radius: 50%;
+    border: 1px #fff solid;
+    background-color: #fff;
+    color: #ff3281;
+    font-size: 18px;
+    box-shadow: 0px 0px 4px black;
+}
+
+/*********CSS de Tablet*************/
+@media screen and (max-width: 708px){
+    .ancho{
+        max-width: 708px;
+        margin: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .cabecera1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 200px;
+        max-width: 1100px;
+    }
+
+    .cabecera2 nav ul{
+        gap: 100px;
+    }
+
+    .fondo{
+        background-image: url(imagenes/slide2.jpg);
+        background-repeat: no-repeat;
+        height: 500px;
+        margin: auto;
+        background-size: 100%;
+    }
+    
+    .banner{
+        padding-top: 150px;
+    }
+
+    .banner p{
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+
+    .velas1{
+        flex-direction: column-reverse;
+        gap: 25px;
+        padding-bottom: 20px;
+    }
+
+    .velas1 h3{
+        text-align: center;
+    }
+
+    .velas1 p{
+        text-align: justify;
+    }
+
+    .puestos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .descripcion{
+        max-width: 600px;
+        text-align: left;
+    }
+
+    .imagen2{
+        margin: 0;
+        width: 450px;
+        height: 300px;
+        
+    }
+    
+    .imagen2 img{
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        filter: sepia(90%);
+    }
+
+    .tratamientos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-top: 25px;
+    }
+
+    .masajes{
+        max-width: 600px;
+        height: 500px;
+        gap: 30px;
+        padding: 15px;
+    }
+    
+    .masajes h3{
+        text-align: center;
+    }
+    
+    .masaje1{
+        max-width: 170px;
+    }
+    
+    .masaje1 img{
+        width: 100%;
+        border-radius: 50%;
+        border: 10px white solid;
+    }
+
+    .banner2{
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .banner3{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .imagen_grande{
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
+/*******CSS de movil************/
+@media screen and (max-width: 414px) {
+    
+    .ancho{
+        max-width: 414px;
+    }
+    
+    .barras{
+        display: block;
+        font-size: 30px;
+        border-radius: 5px;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .cabecera{
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 70px;
+    }
+
+    .cabecera2{
+        width: 50px;
+    }
+
+    .cabecera2 nav{
+        display: none;
+    }
+
+    .cabecera1{
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .redesSociales{
+        padding-left: 120px;
+    }
+
+    .fondo{
+        background-image: url(imagenes/slide1.jpg);
+        background-repeat: no-repeat;
+        margin: auto;
+        background-size: cover;
+        background-position-x: -360px;
+    }
+
+    .banner{
+        padding-top: 20px;
+        height: 500px;
+        width: 100%;
+    }
+
+    .banner h2{
+        font-size: 25px;
+    }
+    
+    .banner p{
+        font-size: 14px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .velas{
+        margin-top: 10px;
+    }
+
+    .img1, .img2{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .banner3{
+        width: 100%;
+        margin: 0;
+    }
+
+    .banner3 figure{
+        margin: 0;
+        max-height: 540px;
+    }
+    
+    .img1 figure{
+        width: 100%;
+        max-height: 270px;
+        margin: 0;
+    }
+    
+    .img2 figure{
+        width: 100%;
+        margin: 0;
+        max-height: 270px;
+    }
+
+    .imagen_grande{
+        max-width: 100%;
+        margin: 0;
+        max-height: 270px;
+    }
+    
+    .imagen_grande img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .imagen2{
+        margin: 0;
+        max-width: 300px;
+        height: 200px;  
+    }
+    
+    .imagen2 img{
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        filter: sepia(90%);
+    }
+}
